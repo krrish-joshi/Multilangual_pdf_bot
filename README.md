@@ -10,25 +10,25 @@
 
 ---
 
-## 📑 **Table of Contents**
-- [🚀 Overview](#-overview)  
-- [🎯 Problem Statement](#-problem-statement)  
-- [✅ Solution](#-solution)  
-- [🛠️ Tech Stack](#️-tech-stack)  
-- [⚡ Features](#-features)  
-- [📦 Installation Guide](#-installation-guide)  
-- [🖥️ How to Use](#️-how-to-use)  
-- [📊 Example](#-example)  
-- [📅 Roadmap](#-roadmap)  
-- [👨‍💻 Maintainer](#-maintainer)  
-- [💡 Quote](#-quote)  
+## 1️⃣ **Table of Contents**
+1. [🚀 Overview](#2️⃣-overview)  
+2. [🎯 Problem Statement](#3️⃣-problem-statement)  
+3. [✅ Solution](#4️⃣-solution)  
+4. [🛠️ Tech Stack](#5️⃣-tech-stack)  
+5. [⚡ Features](#6️⃣-features)  
+6. [📦 Installation Guide](#7️⃣-installation-guide)  
+7. [🖥️ How to Use](#8️⃣-how-to-use)  
+8. [📊 Example](#9️⃣-example)  
+9. [📅 Roadmap](#🔟-roadmap)  
+10. [👨‍💻 Maintainer](#1️⃣1️⃣-maintainer)  
+11. [💡 Quote](#1️⃣2️⃣-quote)  
 
 ---
 
-## 🚀 **Overview**
+## 2️⃣ **Overview**
 > 📘 An **AI-powered chatbot** that allows students to **chat with their PDFs** in **multiple Indian languages**.  
 
-This project brings together:  
+This project combines:  
 - 🔹 **Google Gemini embeddings**  
 - 🔹 **FAISS vector search**  
 - 🔹 **SarvamAI translation**  
@@ -36,14 +36,14 @@ This project brings together:
 
 ---
 
-## 🎯 **Problem Statement**
+## 3️⃣ **Problem Statement**
 - ❌ Extracting information from **large PDFs** is time-consuming.  
 - ❌ Normal chatbots → give **random / irrelevant answers**.  
 - ❌ Most solutions support **English only**, ignoring regional languages.  
 
 ---
 
-## ✅ **Solution**
+## 4️⃣ **Solution**
 - ✔️ Upload **PDFs** → chatbot builds a knowledge base.  
 - ✔️ Ask questions → chatbot replies **from your PDFs only**.  
 - ✔️ Responds in **English + Indian languages** (Hindi, Gujarati, Bengali, Kannada, Punjabi).  
@@ -51,7 +51,7 @@ This project brings together:
 
 ---
 
-## 🛠️ **Tech Stack**
+## 5️⃣ **Tech Stack**
 - 🖥️ **Frontend/UI** → Streamlit  
 - 📄 **PDF Processing** → PyPDF2  
 - 🧠 **Embeddings** → Google Gemini API  
@@ -62,7 +62,7 @@ This project brings together:
 
 ---
 
-## ⚡ **Features**
+## 6️⃣ **Features**
 - 📂 Upload multiple **PDF files**  
 - 🗨️ Chat in **English + regional languages**  
 - 🌐 Switch language from **sidebar**  
@@ -71,27 +71,27 @@ This project brings together:
 
 ---
 
-## 📦 **Installation Guide**
+## 7️⃣ **Installation Guide**
+Run the following commands step by step:  
 
-### 🔹 1. Clone Repository
 ```bash
+# Step 1: Clone Repository
 git clone https://github.com/your-username/multilingual-pdf-chatbot.git
+
+# Step 2: Move into the project directory
 cd multilingual-pdf-chatbot
 
-###🔹 2. Install Dependencies
+# Step 3: Install Dependencies
 pip install -r requirements.txt
 
+# Step 4: Setup Environment Variables (create .env file in root)
+# Add your keys inside .env
+# SARVAM_API_KEY=your_sarvam_api_key
+# GOOGLE_API_KEY=your_gemini_api_key
 
-###🔹 3. Setup Environment Variables
-Create a .env file in the project root:
-
-SARVAM_API_KEY=your_sarvam_api_key
-GOOGLE_API_KEY=your_gemini_api_key
-###🔹 4. Run the Application
+# Step 5: Run the Application
 streamlit run sih.py
-
-'''text
-🖥️ How to Use
+8️⃣ How to Use
 🌐 Open browser → http://localhost:8501
 
 📂 Upload your PDF files
@@ -102,7 +102,7 @@ streamlit run sih.py
 
 🤖 Get answers in your chosen language
 
-📊 Example
+9️⃣ Example
 📂 Upload → machine_learning.pdf
 
 🌐 Select → Hindi
@@ -111,7 +111,7 @@ streamlit run sih.py
 
 🤖 Bot → Replies in Hindi (extracted from PDF)
 
-📅 Roadmap
+🔟 Roadmap
 ✅ PDF extraction + FAISS search
 
 ✅ Multilingual chat (SarvamAI)
@@ -124,17 +124,10 @@ streamlit run sih.py
 
 🔜 Deploy on Cloud
 
-👨‍💻 Maintainer
+1️⃣1️⃣ Maintainer
 👤 Krrish Joshi
 
 🌐 Role: DevOps & Integrations
 
-💡 Quote
+1️⃣2️⃣ Quote
 “Don’t just read your PDFs — converse with them.”
-
----
-
-
-
-
-
