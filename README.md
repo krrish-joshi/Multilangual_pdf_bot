@@ -1,8 +1,4 @@
 <p align="center">
-  alt="Multilingual PDF Chatbot Banner"/>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg" />
   <img src="https://img.shields.io/badge/Streamlit-1.39-red.svg" />
   <img src="https://img.shields.io/badge/License-MIT-green.svg" />
