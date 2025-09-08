@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://via.placeholder.com/900x200.png?text=📚+Multilingual+PDF+Chatbot" alt="Multilingual PDF Chatbot Banner"/>
+  alt="Multilingual PDF Chatbot Banner"/>
 </p>
 
 <p align="center">
