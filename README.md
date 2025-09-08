@@ -1,128 +1,110 @@
-# 🎙️ Voice-First Multilingual Chatbot (DevOps by Krrish Joshi)
+📚 Multilingual PDF Chatbot (Streamlit + Gemini + SarvamAI)
 
-🚀 This project is a **Voice-First Multilingual Chatbot** designed for students,  
-with live deployment on cloud + WhatsApp integration.  
+🚀 An AI-powered chatbot that allows users to upload PDFs and ask questions in multiple Indian languages.
+The bot uses Google Gemini + FAISS + SarvamAI translation to provide contextual answers in the user’s chosen language.
 
-This repo is maintained by **Krrish Joshi** ([@krrish-joshi](https://github.com/krrish-joshi)) as part of our team project,  
-where my role is **DevOps & Integrations**.
+📌 Problem Statement
 
----
+Students often struggle with large PDF documents like notes, books, and research papers.
 
-## 📌 Problem Statement
-- A chatbot that only runs locally = ❌ useless.  
-- Students need it live on the **college website** and on **WhatsApp/Telegram**.  
-- If it crashes under load → failure.  
-- If it’s insecure → unusable.  
+Traditional chatbots don’t read documents, giving random/irrelevant answers.
 
----
+Most tools work only in English, limiting accessibility for regional language students.
 
-## ✅ Our Solution
-A **Voice-First Multilingual Chatbot**, deployed in Docker + Cloud, available to students online:
-- Containers for **ASR, RAG, TTS, Backend**.
-- Public APIs for frontend (Simran).
-- Accessible via **WhatsApp (Twilio Sandbox)**.
-- Logs stored in **Postgres** for monitoring & analytics.
-- HTTPS enabled for secure access.
+✅ Our Solution
 
----
+A Streamlit-based chatbot that:
 
-## 👨‍💻 Team Roles
-- **AIML** → Manan + Pragy  
-- **WebDev** → Simran  
-- **DevOps (this repo)** → Krrish Joshi  
-- **Data** → Runali  
+📄 Extracts knowledge from uploaded PDFs.
 
----
+🔍 Answers contextual questions (not random).
 
-## 🛠️ Tech Stack
-- **Backend**: FastAPI (Python)  
-- **Containers**: Docker + Docker Compose  
-- **Database**: PostgreSQL  
-- **Monitoring**: Prometheus + Grafana  
-- **Messaging**: Twilio WhatsApp API  
-- **Deployment**: Cloud VM (AWS/GCP/Azure)  
+🌐 Responds in English + Indian regional languages (Hindi, Gujarati, Bengali, Kannada, Punjabi).
 
----
+🖥️ Provides a simple UI for students and educators.
 
-## ⚡ Quick Start (Local Setup)
+🛠️ Tech Stack
 
-### 1️⃣ Clone Repo
-```bash
-git clone https://github.com/krrish-joshi/multilingual-chatbot-devops.git
-cd multilingual-chatbot-devops
-2️⃣ Create .env
-ini
-Copy code
-TWILIO_ACCOUNT_SID=your_twilio_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-POSTGRES_USER=chat
-POSTGRES_PASSWORD=changeme
-POSTGRES_DB=chatdb
-3️⃣ Run with Docker
-bash
-Copy code
-docker compose up --build
-Services:
+UI → Streamlit
 
-Backend → http://localhost:8000
+PDF Processing → PyPDF2
 
-ASR → http://localhost:8001
+Embeddings → Google Gemini API
 
-RAG → http://localhost:8002
+Vector DB → FAISS
 
-TTS → http://localhost:8003
+Q&A Engine → LangChain + Gemini Flash
 
-Grafana → http://localhost:3000
+Translation → SarvamAI API
 
-Prometheus → http://localhost:9090
+Env Handling → python-dotenv
 
-4️⃣ Health Check
-bash
-Copy code
-curl http://localhost:8000/health
-📱 WhatsApp Integration
-Join Twilio WhatsApp Sandbox.
+⚡ Features
 
-Set webhook URL → https://your-domain/webhook/twilio.
+Upload multiple PDFs.
 
-Send a WhatsApp message → chatbot replies instantly.
+Ask questions in chat → bot answers only from PDFs.
 
-📊 Monitoring
-Metrics exposed at /metrics (Prometheus format).
+Choose response language from sidebar.
 
-Grafana dashboards available on port 3000.
+Maintains chat history.
 
-🚀 Deployment
-Deploy on cloud VM:
+Handles errors gracefully (empty PDFs, API quota issues, translation errors).
 
-bash
-Copy code
-docker compose up -d --build
-Point domain → VM IP, Caddy auto-generates HTTPS.
+📦 Installation
+1️⃣ Clone Repo
+git clone https://github.com/your-username/multilingual-pdf-chatbot.git
+cd multilingual-pdf-chatbot
 
-🛡️ Security Checklist
-HTTPS with Let’s Encrypt (via Caddy).
+2️⃣ Install Dependencies
+pip install -r requirements.txt
 
-Secrets in .env (not committed).
+3️⃣ Setup API Keys
 
-Logs stored in Postgres.
+Create a .env file in the project root:
 
-Docker healthchecks + monitoring enabled.
+SARVAM_API_KEY=your_sarvam_api_key
+GOOGLE_API_KEY=your_gemini_api_key
+
+4️⃣ Run the App
+streamlit run sih.py
+
+🖥️ Usage
+
+Open the app in your browser → http://localhost:8501.
+
+Select a language from the sidebar.
+
+Upload one or more PDF files.
+
+Ask questions in the chat input box.
+
+Get instant answers in your chosen language!
+
+📊 Example
+
+Upload → machine_learning.pdf
+
+Select → Hindi
+
+Ask → "इस किताब में supervised learning क्या है?"
+
+Bot → Replies in Hindi, based on English PDF content.
 
 📅 Roadmap
- Backend setup (FastAPI)
 
- ASR + RAG + TTS stubs
+✅ PDF extraction + FAISS knowledge base
 
- Postgres logging
+✅ Multilingual chat (SarvamAI)
 
- Prometheus + Grafana monitoring
+✅ Streamlit UI with history
 
- Twilio webhook signature validation
+🔜 Speech-to-Text + Text-to-Speech
 
- Cloud deployment (AWS/GCP/Azure)
+🔜 More Indian languages
 
- Kubernetes scaling (future)
+🔜 Cloud deployment (future)
 
-👤 Maintainer: @krrish-joshi
+👤 Maintainer: Krrish Joshi
+
 🌐 Role: DevOps & Integrations
