@@ -132,9 +132,9 @@ streamlit run sih.py
  🔜 Deploy on Cloud
 
 1️⃣1️⃣ Maintainer
-👤 Krrish Joshi
+👤 [**Krrish Joshi**](https://github.com/krrish-joshi)
 
-🌐 Role: DevOps & Integrations
+🌐 Role: AI & RAG
 
 1️⃣2️⃣ Quote
 “Don’t just read your PDFs — converse with them.”
