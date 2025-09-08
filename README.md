@@ -77,10 +77,11 @@ Run the following commands step by step:
 ```bash
 # Step 1: Clone Repository
 git clone https://github.com/your-username/multilingual-pdf-chatbot.git
-
+```
+```bash
 # Step 2: Move into the project directory
 cd multilingual-pdf-chatbot
-
+```
 # Step 3: Install Dependencies
 pip install -r requirements.txt
 
