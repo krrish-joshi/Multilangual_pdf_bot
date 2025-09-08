@@ -77,17 +77,20 @@ This project brings together:
 ```bash
 git clone https://github.com/your-username/multilingual-pdf-chatbot.git
 cd multilingual-pdf-chatbot
-🔹 2. Install Dependencies
-bash
-Copy code
+
+###🔹 2. Install Dependencies
 pip install -r requirements.txt
-🔹 3. Setup Environment Variables
+
+
+###🔹 3. Setup Environment Variables
 Create a .env file in the project root:
 
 SARVAM_API_KEY=your_sarvam_api_key
 GOOGLE_API_KEY=your_gemini_api_key
-🔹 4. Run the Application
+###🔹 4. Run the Application
 streamlit run sih.py
+
+'''text
 🖥️ How to Use
 🌐 Open browser → http://localhost:8501
 
