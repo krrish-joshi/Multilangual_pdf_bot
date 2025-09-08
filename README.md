@@ -74,43 +74,49 @@ This project combines:
 ## 7️⃣ **Installation Guide**
 Run the following commands step by step:  
 
-```bash
 # Step 1: Clone Repository
+```bash
 git clone https://github.com/your-username/multilingual-pdf-chatbot.git
 ```
-```bash
 # Step 2: Move into the project directory
+```bash
 cd multilingual-pdf-chatbot
 ```
 # Step 3: Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 # Step 4: Setup Environment Variables (create .env file in root)
 # Add your keys inside .env
-# SARVAM_API_KEY=your_sarvam_api_key
-# GOOGLE_API_KEY=your_gemini_api_key
+```bash
+SARVAM_API_KEY=your_sarvam_api_key
+GOOGLE_API_KEY=your_gemini_api_key
+```
 
 # Step 5: Run the Application
+```bash
 streamlit run sih.py
-8️⃣ How to Use
-🌐 Open browser → http://localhost:8501
+```
+##8️⃣ **How to Use**
+  🌐 Open browser → http://localhost:8501
 
-📂 Upload your PDF files
+  📂 Upload your PDF files
 
-🔄 Select your preferred language
+  🔄 Select your preferred language
 
-❓ Type your question
+  ❓ Type your question
 
-🤖 Get answers in your chosen language
+  🤖 Get answers in your chosen language
 
-9️⃣ Example
-📂 Upload → machine_learning.pdf
+##9️⃣ **Example**
+  📂 Upload → machine_learning.pdf
 
-🌐 Select → Hindi
+  🌐 Select → Hindi
 
-❓ Ask → "इस किताब में supervised learning क्या है?"
+  ❓ Ask → "इस किताब में supervised learning क्या है?"
 
-🤖 Bot → Replies in Hindi (extracted from PDF)
+  🤖 Bot → Replies in Hindi (extracted from PDF)
 
 🔟 Roadmap
 ✅ PDF extraction + FAISS search
