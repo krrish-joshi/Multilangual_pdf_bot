@@ -119,17 +119,17 @@ streamlit run sih.py
   🤖 Bot → Replies in Hindi (extracted from PDF)
 
 🔟 Roadmap
-✅ PDF extraction + FAISS search
+ ✅ PDF extraction + FAISS search
 
-✅ Multilingual chat (SarvamAI)
+ ✅ Multilingual chat (SarvamAI)
 
-✅ Streamlit UI with chat history
+ ✅ Streamlit UI with chat history
 
-🔜 Add Speech-to-Text & Text-to-Speech
+ 🔜 Add Speech-to-Text & Text-to-Speech
 
-🔜 Add support for more Indian languages
+ 🔜 Add support for more Indian languages
 
-🔜 Deploy on Cloud
+ 🔜 Deploy on Cloud
 
 1️⃣1️⃣ Maintainer
 👤 Krrish Joshi
