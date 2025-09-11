@@ -98,7 +98,7 @@ GOOGLE_API_KEY=your_gemini_api_key
 ```bash
 streamlit run sih.py
 ```
-##8️⃣ **How to Use**
+## 8️⃣ **How to Use**
   🌐 Open browser → http://localhost:8501
 
   📂 Upload your PDF files
@@ -109,7 +109,7 @@ streamlit run sih.py
 
   🤖 Get answers in your chosen language
 
-##9️⃣ **Example**
+## 9️⃣ **Example**
   📂 Upload → machine_learning.pdf
 
   🌐 Select → Hindi
@@ -118,7 +118,7 @@ streamlit run sih.py
 
   🤖 Bot → Replies in Hindi (extracted from PDF)
 
-🔟 Roadmap
+## **🔟 Roadmap**
  ✅ PDF extraction + FAISS search
 
  ✅ Multilingual chat (SarvamAI)
@@ -131,10 +131,10 @@ streamlit run sih.py
 
  🔜 Deploy on Cloud
 
-1️⃣1️⃣ Maintainer
+### **1️⃣1️⃣ Maintainer**
 👤 [**Krrish Joshi**](https://github.com/krrish-joshi)
 
 🌐 Role: AI & RAG
 
-1️⃣2️⃣ Quote
+### **1️⃣2️⃣ Quote**
 “Don’t just read your PDFs — converse with them.”
