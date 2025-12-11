@@ -164,4 +164,5 @@ if submitted and user_input.strip():
     st.session_state.chat_history.append(
         f"<div style='text-align:left;color:#228B22;'><strong>Bot:</strong> {final_answer}</div>"
     )
+
     st.rerun()
